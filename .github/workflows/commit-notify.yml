@@ -5,6 +5,9 @@ on:
     branches:
       - main
       - master
+    paths-ignore:
+      - '.github/**'  # .github 폴더 변경은 무시
+      - 'README.md'
 
 jobs:
   notify-commit:
